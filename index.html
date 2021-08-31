@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="Date.css"/>
+    <title>Alarm Clock</title>
+</head>
+<body>
+    <div id="container">
+        <h1 id="h1">
+            Time : <span id="time"></span>
+        </h1>
+        <h2 id="Alarm-Text">Set An Alarm Clock!</h2>
+        <form id="form">
+            <div id="time-container">
+                <div id="box-container">
+                    <input id="Uhours" class="time-box" type="number" min ="00" max="24"><span class="colon">:</span>
+                    <input id="Uminutes" class="time-box" type="number" min = "00" max="59"><span class="colon">:</span>
+                    <input id="Useconds" class="time-box" type="number" min = "00" max="59">
+                </div>
+                <div id="indicator">
+                    <div class="time">Hours</div>
+                    <div class="time">Minutes</div>
+                    <div class="time">Seconds</div>
+                </div>
+                
+            </div>
+            
+            <input id="button" type="button" value="SET">
+        </form>
+    </div>
+    <img id="img-sun" src="Sun.png" alt="">
+    <img id="img-moon" src="Moon1.png" alt="">
+    <audio id="audio"><source src="Sound.mp3"/></audio>
+    <script src="Date.js"></script>
+</body>
+</html>
